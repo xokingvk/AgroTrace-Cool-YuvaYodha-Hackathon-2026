@@ -1,0 +1,120 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  darkMode: 'class',
+  content: [
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./views/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        // Direct Cyber Ink & Lime Palette
+        ink: {
+          DEFAULT: '#0D1117',
+          base: '#0D1117',
+          secondary: '#161B22',
+        },
+        slate: {
+          card: '#21262D',
+          elevated: '#2A3139',
+          border: '#30363D',
+        },
+        cyber: {
+          lime: '#39FF14',
+          cyan: '#00F0FF',
+        },
+        // Mapped legacy tokens to guarantee 100% theme consistency
+        forest: {
+          DEFAULT: '#F0F3F0',
+          50: '#161B22',
+          100: '#21262D',
+          200: '#30363D',
+          300: '#7D8790',
+          400: '#B8C0C7',
+          500: '#39FF14',
+          600: '#39FF14',
+          700: '#39FF14',
+          800: '#32e612',
+          900: '#161B22',
+          950: '#0D1117',
+        },
+        sage: {
+          DEFAULT: '#B8C0C7',
+          light: '#F0F3F0',
+          dark: '#B8C0C7',
+        },
+        olive: {
+          DEFAULT: '#7D8790',
+          light: '#B8C0C7',
+          dark: '#30363D',
+        },
+        mint: {
+          DEFAULT: '#2A3139',
+          light: '#2A3139',
+          dark: '#21262D',
+        },
+        warm: {
+          bg: '#0D1117',
+          surface: '#21262D',
+          card: '#21262D',
+          border: '#30363D',
+          muted: '#161B22',
+        },
+        charcoal: {
+          DEFAULT: '#F0F3F0',
+          muted: '#B8C0C7',
+          subtle: '#7D8790',
+        },
+        dark: {
+          bg: '#0D1117',
+          'bg-subtle': '#161B22',
+          surface: '#21262D',
+          'surface-elevated': '#2A3139',
+          elevated: '#2A3139',
+          border: '#30363D',
+          text: '#F0F3F0',
+          'text-primary': '#F0F3F0',
+          'text-secondary': '#B8C0C7',
+          'text-muted': '#7D8790',
+          muted: '#7D8790',
+          secondary: '#B8C0C7',
+          accent: '#39FF14',
+          positive: '#39FF14',
+          warning: '#D29922',
+          error: '#F85149',
+        },
+        status: {
+          cooling: '#39FF14',
+          coolingBg: 'rgba(57, 255, 20, 0.1)',
+          coolingBorder: 'rgba(57, 255, 20, 0.25)',
+          monitoring: '#00F0FF',
+          monitoringBg: 'rgba(0, 240, 255, 0.1)',
+          monitoringBorder: 'rgba(0, 240, 255, 0.25)',
+          completed: '#4ADE80',
+          completedBg: 'rgba(74, 222, 128, 0.1)',
+          completedBorder: 'rgba(74, 222, 128, 0.25)',
+          attention: '#D29922',
+          attentionBg: 'rgba(210, 153, 34, 0.1)',
+          attentionBorder: 'rgba(210, 153, 34, 0.25)',
+          fault: '#F85149',
+          faultBg: 'rgba(248, 81, 73, 0.1)',
+          faultBorder: 'rgba(248, 81, 73, 0.25)',
+        }
+      },
+      fontFamily: {
+        sans: ['Poppins', 'system-ui', 'sans-serif'],
+      },
+      boxShadow: {
+        'soft-sm': '0 1px 3px rgba(0, 0, 0, 0.2)',
+        'soft': '0 3px 8px -1px rgba(0, 0, 0, 0.25)',
+        'soft-md': '0 6px 16px -2px rgba(0, 0, 0, 0.3)',
+        'soft-lg': '0 12px 24px -4px rgba(0, 0, 0, 0.35)',
+        'dark-soft': '0 4px 12px rgba(0, 0, 0, 0.4)',
+      },
+    },
+  },
+  plugins: [],
+}
